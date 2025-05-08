@@ -1,0 +1,48 @@
+name: taskmanagement
+description: "A Flutter task management application with calendar integration."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  
+  flutter:
+    sdk: flutter
+  async: ^2.12.0
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.9
+  intl: ^0.20.2
+  table_calendar: ^3.2.0
+  font_awesome_flutter: ^10.8.0
+  shared_preferences: ^2.5.3
+  hive_flutter: ^1.1.0
+  flutter_local_notifications: ^19.1.0
+  flutter_timezone: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3  # ✅ هنا مكانها الصحيح
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/splash_bg.svg
+    - assets/images/1.png
+    - assets/icons/spider.svg
+    - assets/icons/spider.jpg
+    - assets/images/logo1.png
+
+# ✅ هذا القسم يجب أن يكون خارج flutter:
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo1.png"
+  adaptive_icon_background: "#FFFFFF"  
+  adaptive_icon_foreground: "assets/images/logo1.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true  
